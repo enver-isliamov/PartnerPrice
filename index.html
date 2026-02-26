@@ -16,6 +16,13 @@
 }
 </script>
 <style>
+  @media print {
+    *, *::before, *::after {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+  }
+
   .editable-text {
     transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     border-radius: 4px;
